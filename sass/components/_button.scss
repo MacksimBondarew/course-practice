@@ -1,0 +1,45 @@
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: $color-white;
+    padding: 1.5rem 4rem;
+    color: $color-gray;
+    border-radius: 5rem;
+    transition: transform 250ms;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+    position: relative;
+    z-index: 1;
+    
+
+    &:hover,
+    &:focus {
+        transform: translateY(-3px);
+        box-shadow: $shadow-button;
+
+        &::after {
+            opacity: 0;
+            transform: scale(1.3, 1.4);
+        }
+    }
+
+    &::after {
+        content: '';
+        background-color: $color-white;
+        width: 100%;
+        height: 100%;
+        border-radius: 5rem;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: transform 500ms, opacity 500ms;
+    }
+
+    &__header {
+        animation: btnTopUp 1s ease 700ms;
+        animation-fill-mode: backwards;
+    }
+}
