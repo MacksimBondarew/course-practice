@@ -1,6 +1,5 @@
 .btn {
     display: inline-block;
-    text-decoration: none;
     background-color: $color-white;
     padding: 1.5rem 4rem;
     color: $color-gray;
@@ -11,11 +10,12 @@
     letter-spacing: 0.5rem;
     position: relative;
     z-index: 1;
-    
+    border-color: transparent;
+    cursor: pointer;
 
     &:hover,
     &:focus {
-        transform: translateY(-3px);
+        transform: translateY(0.3rem);
         box-shadow: $shadow-button;
 
         &::after {
@@ -36,6 +36,7 @@
         left: 0;
         z-index: -1;
         transition: transform 500ms, opacity 500ms;
+        
     }
 
     &__header {

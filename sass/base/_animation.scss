@@ -35,3 +35,11 @@
         transform: translateY(0);
     }
 }
+@keyframes secondaryTitle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

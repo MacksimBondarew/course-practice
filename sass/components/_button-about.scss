@@ -1,0 +1,21 @@
+.btn-text {
+    padding: 1.5rem 4rem;
+    transition: all 250ms;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    border-color: transparent;
+    color: $brown-color-light;
+    background-color: transparent;
+    cursor: pointer;
+    border-bottom: 1px solid $brown-color-light;
+    padding: 1rem 0.8rem;
+
+    &:hover,
+    &:focus {
+        background-color: $brown-color-light;
+        color: $color-white;
+        box-shadow: $shadow-button;
+        transform: translateY(-0.3rem);
+    }
+}

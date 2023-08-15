@@ -1,0 +1,20 @@
+.composition {
+    position: relative;
+    &__photo {
+        width: 55%;
+        border-radius: 0.5rem;
+        position: absolute;
+        &_n1 {
+            top: 0;
+            left: 0rem;
+        }
+        &_n2 {
+            top: 2rem;
+            right: 0rem;
+        }
+        &_n3 {
+            top: 13rem;
+            left: 10rem;
+        }
+    }
+}
