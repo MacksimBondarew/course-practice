@@ -1,0 +1,14 @@
+.adventure-card {
+    background: rgba($color-white, 0.8);
+    border-radius: 5px;
+    padding: 2.4rem;
+    box-shadow: $shadow-button;
+    text-align: center;
+
+    &__icon {
+        width: 6rem;
+        height: 6rem;
+        fill: $brown-color-light;
+        margin-bottom: 2.5rem;
+    }
+}

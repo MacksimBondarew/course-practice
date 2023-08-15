@@ -8,6 +8,8 @@
     margin-right: auto;
     margin-left: auto;
     position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    height: 75rem;
     &__logo {
         width: 5.6rem;
         height: 7rem;
@@ -16,9 +18,7 @@
         left: 5rem;
     }
     &__container {
-        height: 75rem;
         padding: 0 1.5rem;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
         margin-right: auto;
         margin-left: auto;
         max-width: 117rem;
