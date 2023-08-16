@@ -187,6 +187,10 @@ body {
   margin-left: auto;
 }
 
+.section-tour {
+  padding: 8rem 0 8.5rem 0;
+}
+
 .title-secondary {
   font-size: 3.6rem;
   letter-spacing: 1rem;
@@ -204,6 +208,10 @@ body {
 
 .col-1-of-4 {
   width: calc((100% - 18rem) / 4);
+}
+
+.col-1-of-3 {
+  width: calc((100% - 12rem) / 3);
 }
 
 .row {
@@ -295,4 +303,35 @@ body {
   height: 6rem;
   fill: #ba8554;
   margin-bottom: 2.5rem;
+}
+
+.card-tour {
+  height: 50rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
+.card-tour__side {
+  height: 50rem;
+  color: black;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 700ms all;
+}
+.card-tour__side_front {
+  background: #FFF;
+  border-radius: 3px;
+}
+.card-tour__side_back {
+  transform: rotateY(180deg);
+  border-radius: 3px;
+  background: linear-gradient(135deg, #c3956a 3.65%, #a14f03 100%);
+  box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.card-tour:hover .card-tour__side_front {
+  transform: rotateY(180deg);
+}
+.card-tour:hover .card-tour__side_back {
+  transform: rotateY(0deg);
 }/*# sourceMappingURL=main.css.map */
